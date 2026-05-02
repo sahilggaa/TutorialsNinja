@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Parallel Test Suite" parallel="tests">
+
+	<parameter name="os" value="mac"></parameter>
+	<parameter name="br" value="chrome"></parameter>
+		
+		
+	<listeners>
+		<listener class-name="utilities.ExtentReportsManager"/>
+	</listeners>
+	
+	<test name="test11">
+	
+		<parameter name="os" value="mac"></parameter>
+		<parameter name="br" value="chrome"></parameter>
+
+	
+		<classes>
+			<class name="testCases.TC001_ValidateLoginScreen"></class>
+		</classes>
+	
+	</test>
+	
+	<test name="test2">
+	
+		<parameter name="os" value="mac"></parameter>
+		<parameter name="br" value="safari"></parameter>
+
+	
+		<classes>
+			<class name="testCases.TC001_ValidateLoginScreen"></class>
+		</classes>
+	
+	</test>
+
+
+</suite>

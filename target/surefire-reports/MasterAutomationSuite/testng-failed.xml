@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [MasterAutomationSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="utilities.ExtentReportsManager"/>
+  </listeners>
+  <test thread-count="2" name="Test1(failed)" verbose="0">
+    <parameter name="br" value="chrome"/>
+    <parameter name="os" value="linux"/>
+    <classes>
+      <class name="testCases.TC001_ValidateLoginScreen">
+        <methods>
+          <include name="setUp"/>
+          <include name="test_LoginScreen" invocation-numbers="2"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testCases.TC001_ValidateLoginScreen -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [MasterAutomationSuite] -->

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Selenium Grid Suite">
+
+
+	<listeners>
+		<listener class-name="utilities.ExtentReportsManager"></listener>
+	</listeners>
+
+	<parameter name="os" value="mac"/>
+	<parameter name="br" value="chrome"/>
+	
+	
+	<test name="grid tests">
+		<classes>
+			<class name="testCases.TC001_ValidateLoginScreen"></class>
+		</classes>
+	</test>
+</suite>

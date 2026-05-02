@@ -1,0 +1,8 @@
+utilities/ExtentReportsManager.class
+pageObjects/LoginPage.class
+pageObjects/BasePage.class
+testBase/BaseClass.class
+testBase/BaseClass2.class
+utilities/DataProviders.class
+utilities/ExcelUtility.class
+testCases/TC001_ValidateLoginScreen.class
