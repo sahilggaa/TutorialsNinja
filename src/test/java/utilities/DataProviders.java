@@ -17,8 +17,10 @@ public class DataProviders {
 		int totalColumns = xlUtil.getCellCount("Sheet1", 1);
 		
 		String loginData[][] = new String[totalRows][totalColumns];
-		
-		for(int i = 1; i<=totalRows;i++)
+
+		//for(int i = 1; i<=totalRows;i++)
+
+		for(int i = 1; i<=1;i++)
 		{
 			for(int j = 0; j<totalColumns;j++)
 			{
