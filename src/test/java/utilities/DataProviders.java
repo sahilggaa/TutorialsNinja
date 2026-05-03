@@ -16,7 +16,8 @@ public class DataProviders {
 		int totalRows = xlUtil.getRowCount("Sheet1");
 		int totalColumns = xlUtil.getCellCount("Sheet1", 1);
 		
-		String loginData[][] = new String[totalRows][totalColumns];
+//		String loginData[][] = new String[totalRows][totalColumns];
+		String loginData[][] = new String[1][totalColumns];
 
 		//for(int i = 1; i<=totalRows;i++)
 
