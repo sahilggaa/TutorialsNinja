@@ -8,24 +8,25 @@ services:
     ports:
       - "4444:4444"   # keep only this
 
-  chrome:
-    image: selenium/node-chrome:4.21.0
-    platform: linux/amd64
-    shm_size: 2gb
-    depends_on:
-      - selenium-hub
-    environment:
-      - SE_EVENT_BUS_HOST=selenium-hub
+ chrome:
+  image: selenium/node-chrome:4.21.0
+  shm_size: 2gb
+  depends_on:
+    - selenium-hub
+  environment:
+    - SE_EVENT_BUS_HOST=selenium-hub
+    - SE_EVENT_BUS_PUBLISH_PORT=4442
+    - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
 
-  firefox:
-    image: selenium/node-firefox:4.21.0
-    platform: linux/amd64
-    shm_size: 2gb
-    depends_on:
-      - selenium-hub
-    environment:
-      - SE_EVENT_BUS_HOST=selenium-hub
-
+firefox:
+  image: selenium/node-firefox:4.21.0
+  shm_size: 2gb
+  depends_on:
+    - selenium-hub
+  environment:
+    - SE_EVENT_BUS_HOST=selenium-hub
+    - SE_EVENT_BUS_PUBLISH_PORT=4442
+    - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
   test-runner:
     build: .
     depends_on:
