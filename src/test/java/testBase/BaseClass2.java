@@ -51,7 +51,7 @@ public class BaseClass2 {
 		
 		if(p.getProperty("execution_env").equals("remote"))
 		{
-			String gridUrl = p.getProperty("dockerurl");
+			String gridUrl = p.getProperty("jenkinsdockerurl");
 	
 //			WebDriver remoteDriver = null;
 	
