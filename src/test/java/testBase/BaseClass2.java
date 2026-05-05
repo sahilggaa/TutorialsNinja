@@ -56,6 +56,7 @@ public class BaseClass2 {
 		if(p.getProperty("execution_env").equals("remote"))
 		{
 			String gridUrl = "http://selenium-hub:4444/wd/hub";
+			logger.info("GRID URL USED: http://selenium-hub:4444/wd/hub");
 	
 //			WebDriver remoteDriver = null;
 	
