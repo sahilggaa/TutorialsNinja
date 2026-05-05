@@ -29,6 +29,8 @@ public class BaseClass2 {
 
 	public Properties p;
 
+	
+
 	public WebDriver getDriver()
 	{
 		return driver.get();
@@ -48,6 +50,8 @@ public class BaseClass2 {
 		p.load(file);
 		
 		WebDriver driver_select = getDriver();
+
+		Thread.sleep(8000);
 		
 		if(p.getProperty("execution_env").equals("remote"))
 		{
