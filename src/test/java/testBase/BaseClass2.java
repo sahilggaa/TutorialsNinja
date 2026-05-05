@@ -38,7 +38,7 @@ public class BaseClass2 {
 
 	@BeforeClass
 	@Parameters({"os","br"})
-	public void setUp(String os, String br) throws IOException {
+	public void setUp(String os, String br) throws IOException, InterruptedException {
 
 		logger = LogManager.getLogger(this.getClass());
 		logger.info("Base Class Initialized");
