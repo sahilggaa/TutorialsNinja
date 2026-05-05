@@ -9,6 +9,7 @@ services:
   chrome:
     image: selenium/node-chrome:4.21.0
     shm_size: 2gb
+	platform: linux/amd64
     depends_on:
       - selenium-hub
     environment:
@@ -19,6 +20,7 @@ services:
   firefox:
     image: selenium/node-firefox:4.21.0
     shm_size: 2gb
+	platform: linux/amd64
     depends_on:
       - selenium-hub
     environment:
